@@ -2,8 +2,8 @@
 if($_SERVER['HTTP_HOST'] == 'localhost') {
     $db_server = 'localhost';
     $db_user = 'root';
-    $db_password = '';
-    $db_name = 'deltacampus';
+    $db_password = 'root';
+    $db_name = 'xxxxxxx';
 }
 else {
     $db_server = 'xxxxxxx.mysql.db';
