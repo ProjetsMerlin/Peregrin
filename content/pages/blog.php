@@ -3,7 +3,7 @@
 <div class="center">
     <?php include_once('content/include/nav.php');?>
     <h1>
-        <?= $trad['blog'];?>
+        <?= $trad['title_blog'];?>
     </h1>
     <?php if (isset($_GET["id"]) && htmlspecialchars($_GET["slug"])) : ?>
     <pre>

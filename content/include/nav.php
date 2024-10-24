@@ -1,5 +1,5 @@
 <nav>
-<?php foreach ($possible_langage AS $langs) : ?>
-    <a href="<?= $langs;?>/<?= $trad[$langs."_".$page];?>"><?= $langs;?></a>
-<?php endforeach;?>
+    <?php foreach ($possible_langage AS $lang) : ?>
+    <a href="<?= $lang;?>/<?= $trad[$lang."_home"];?>"><?= $lang;?></a>
+    <?php endforeach;?>
 </nav>
