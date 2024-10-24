@@ -5,8 +5,8 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>htts://peregrin.lintermediaire.be</loc>
-    <lastmod>2021-10-30T20:32:28+00:00</lastmod>
-    <priority>1.00</priority>
+    <loc>https://monsite.be</loc>
+    <lastmod>2024-10-24T20:32:28+00:00</lastmod>
+    <priority>1.0</priority>
   </url>
 </urlset>

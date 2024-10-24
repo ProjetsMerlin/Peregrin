@@ -1,10 +1,10 @@
 <?php include_once('content/include/head.php');?>
 
 <div class="center">
-<?php include_once('content/include/nav.php');?>
+    <?php include_once('content/include/nav.php');?>
     <img src="seo/share.png" alt="<?= $site_title;?>" title="<?= $site_title;?>">
     <h1>
-        <?= $trad['welcome'];?>
+        <?= $trad['title_home'];?>
     </h1>
     <pre>
 template="<?= $page;?>"
