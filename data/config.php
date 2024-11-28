@@ -32,3 +32,5 @@ function peregrin_ucfirst($input) {
 function peregrin_authBasic($username,$password) {
   return 'Authorization: Basic ' . base64_encode($username . ':' . $password);
 }
+
+//function ogg balise
