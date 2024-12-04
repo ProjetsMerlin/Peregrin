@@ -19,7 +19,7 @@
 
         <base href="<?= $url_base;?>">
 
-        <link rel="shortcut icon" type="image/x-icon" href="seo/favicon.png">
+        <link rel="icon" type="image/x-icon" href="seo/favicon.png">
         <link rel="stylesheet" href="assets/style/peregrin.css">
     </head>
 
