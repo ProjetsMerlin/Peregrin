@@ -36,24 +36,23 @@ function peregrin_authBasic($username,$password) {
 
 
 function runBalisesOgg($site_title,$site_content,$url_online, $lang) {
-  $result = '
-<meta property="og:title" content="'.$site_title.'">
-<meta property="og:description" content="'.$site_content.'">
+$result = '
+<meta property="og:title" content="'.$site_title.'" />
+<meta property="og:description" content="'.$site_content.'" />
 <meta property="og:image" content="seo/share.png">
-<meta property="og:url" content="'.$url_online.'">
+<meta property="og:url" content="'.$url_online.'" />
 <meta property="og:type" content="website">
-<meta property="og:locale" content="'.$lang.'">
+<meta property="og:locale" content="'.$lang.'" />
 
-<meta name="twitter:title" content="'.$site_title.'">
-<meta name="twitter:description" content="'.$site_content.'">
+<meta name="twitter:title" content="'.$site_title.'" />
+<meta name="twitter:description" content="'.$site_content.'" />
 <meta name="twitter:image" content="seo/share.png">
-<meta name="twitter:url" content="'.$url_online.'">
+<meta name="twitter:url" content="'.$url_online.'" />
 
-<meta property="og:title" content="'.$site_title.'">
-<meta property="og:description" content="'.$site_content.'">
+<meta property="og:title" content="'.$site_title.'" />
+<meta property="og:description" content="'.$site_content.'" />
 <meta property="og:image" content="seo/share.png">
-<meta property="og:url" content="'.$url_online.'">
+<meta property="og:url" content="'.$url_online.'" />
 ';
-
 return $result;
 }
