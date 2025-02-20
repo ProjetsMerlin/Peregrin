@@ -11,9 +11,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 #home
 RewriteRule ^([a-z]+)/?$ ./index.php?lang=$1 [L]
 #page
-RewriteRule ^([a-z]+)/([a-z]+)$ ./index.php?lang=$1&page=$2 [L]
+RewriteRule ^([a-z]+)/([a-zA-Z0-9-_]+)$ ./index.php?lang=$1&page=$2 [L]
 #single post
-RewriteRule ^([a-z]+)/([a-z]+)/([0-9]+)/([A-z[:punct:]\w+]+)$ ./index.php?lang=$1&page=$2&id=$3&slug=$4 [L]
+RewriteRule ^([a-z]+)/([a-zA-Z0-9-_]+)/([0-9]+)/([a-zA-Z0-9-_]+)$ ./index.php?lang=$1&page=$2&id=$3&slug=$4 [L]
 
 # autoriser des site à correspondre
 SetEnvIf Origin "http(s)?://(www\.)?(site1.be|site2.be|site3.be)$"AccessControlAllowOrigin=$0

@@ -10,12 +10,9 @@
         <meta name="language" content="<?= $lang;?>">
         <meta name="author" content="<?= $site_author;?>">
 
-        <!--Balises OG-->
-        <meta property="og:title" content="<?= $site_title;?>">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="<?= $url_base;?>">
-        <meta property="og:image" content="seo/share.png">
-        <!---->
+        <!-- BALISES OGG -->
+        <?= runBalisesOgg($site_title,$site_content,$url_base, $trad['lang_code']) ; ?>
+        <!--  -->
 
         <base href="<?= $url_base;?>">
 
