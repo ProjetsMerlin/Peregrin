@@ -6,11 +6,11 @@
         <?= $trad['title_blog'];?>
     </h1>
     <?php if (isset($_GET["id"]) && htmlspecialchars($_GET["slug"])) : ?>
-    <pre>
-    ID : <?= htmlspecialchars($_GET["id"]); ?>
-    SLUG : <?= htmlspecialchars($_GET["slug"]); ?>
+        <pre>
+            ID : <?= htmlspecialchars($_GET["id"]); ?>
+            SLUG : <?= htmlspecialchars($_GET["slug"]); ?>
+        </pre>
     <?php endif;?>
-</pre>
 </div>
 
 <?php include_once('content/include/footer.php');?>
