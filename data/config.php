@@ -64,12 +64,11 @@ function runBalisesOgg($site_title,$site_content,$url_online, $lang) {
 /* run favicons on : https://realfavicongenerator.net/ */
 function runFavicons() {
   $favicons = <<<HTML
-  <link rel="icon" type="image/png" href="/seo/favicons/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/seo/favicons/favicon.svg" />
-  <link rel="shortcut icon" href="/seo/favicons/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/seo/favicons/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Peregrin" />
-  <link rel="manifest" href="/seo/favicons/site.webmanifest" />
+  <link rel="icon" type="image/png" href="seo/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="seo/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="seo/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="seo/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="seo/favicons/site.webmanifest" />
   HTML;
   
   return $favicons;
