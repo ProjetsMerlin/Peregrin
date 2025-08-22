@@ -40,7 +40,7 @@ ServerSignature Off
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !=localhost
 RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?peregrin.lintermediaire.be/ [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?lintermediaire.be/peregrin/ [NC]
 RewriteRule \.(jpg|jpeg|png|gif)$ http://fakeimg.pl/400x200/?text=Pas_touche_aux_images [NC,R,L]
 
 # Mise en cache des fichiers dans le navigateur
