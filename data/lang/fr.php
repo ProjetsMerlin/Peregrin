@@ -1,6 +1,8 @@
 <?php
 /* HEAD BALISES*/
 $trad["lang_code"] = "fr-BE";
+$trad["lang_direction"] = "ltr";
+
 $trad['site_description'] = "Peregrin Touque !";
 
 /* title page */

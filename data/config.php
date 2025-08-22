@@ -1,9 +1,9 @@
 <?php
 /* PARAMETERS */
-$url_local = 'localhost/projets/peregrin';
+$url_local = 'localhost/projets/perso/peregrin';
 $url_online = 'monsite.be';
-$possible_langage = array('fr', 'nl');
 $site_version = 1.2;
+$possible_langage = array('fr', 'nl');
 
 $trad['fr_home'] = "accueil";
 $trad['nl_home'] = "welkom";
@@ -37,6 +37,10 @@ function peregrin_authBasic($username,$password) {
 
 function runBalisesOgg($site_title,$site_content,$url_online, $lang) {
 $result = '
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="'.$site_title.'">
+    
 <meta property="og:title" content="'.$site_title.'" />
 <meta property="og:description" content="'.$site_content.'" />
 <meta property="og:image" content="seo/share.png" />
