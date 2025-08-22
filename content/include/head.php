@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="<?= $trad['lang_code'];?>">
+<html
+    lang="<?= $trad["lang_code"];?> <?php if($trad["lang_code"]) : echo $trad["lang_code"]; else : echo 'fr'; endif; ?>"
+    dir="<?php if($trad["lang_direction"]) : echo $trad["lang_direction"]; else : echo 'ltr'; endif; ?>">
 
     <head>
         <meta charset="UTF-8" />
@@ -10,15 +12,28 @@
         <meta name="language" content="<?= $lang;?>">
         <meta name="author" content="<?= $site_author;?>">
 
-        <!-- BALISES OGG -->
-        <?= runBalisesOgg($site_title,$site_content,$url_base, $trad['lang_code']) ; ?>
+        <base href="<?= $url_base;?>">
+        <link rel="canonical" href="<?= $url_base;?><?= $lang;?>/<?= $trad[$lang."_".$page];?>" />
+
+        <!-- FAVICONS -->
+        <link rel="icon" type="image/x-icon" href="seo/favicon.png">
         <!--  -->
 
-        <base href="<?= $url_base;?>">
+        <!-- BALISES OGG -->
+        <?= runBalisesOgg($site_title,$site_content,$url_base, $trad["lang_code"]) ; ?>
+        <!--  -->
 
-        <link rel="icon" type="image/x-icon" href="seo/favicon.png">
+        <!-- SITEMAP -->
+        <link rel="alternate" type="application/rss+xml" title="RSS | <?= $site_title;?>"
+            href="<?= $url_base;?>/seo/sitemap.xml">
+
         <link rel="stylesheet" href="assets/style/peregrin.css">
+
+        <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
     </head>
 
-    <body class="peregrin" data-template="<?= $page;?>" data-lang="<?= $lang;?>" data-base="<?= $url_base;?>"
+    <body class="peregrin" data-template="<?= $page;?>" data-lang="<?= $lang;?>"
+        data-url="<?= $url_base;?><?= $lang;?>/<?= $trad[$lang."_".$page];?>" data-base="<?= $url_base;?>"
         data-uri="<?php if( !empty($get_page)) : echo $get_page; else : echo ""; endif;?>">
