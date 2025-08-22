@@ -6,32 +6,28 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- METADATA -->
         <title><?= $site_title;?></title>
         <meta name="description" content="<?= $trad['site_description'];?>">
         <meta name="robots" content="all">
         <meta name="language" content="<?= $lang;?>">
         <meta name="author" content="<?= $site_author;?>">
 
+        <!-- MAPPING  -->
         <base href="<?= $url_base;?>">
         <link rel="canonical" href="<?= $url_base;?><?= $lang;?>/<?= $trad[$lang."_".$page];?>" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="<?= $url_base;?>/seo/sitemap.xml">
 
         <!-- FAVICONS -->
-        <link rel="icon" type="image/x-icon" href="seo/favicon.png">
-        <!--  -->
+        <?= runFavicons($site_title);?>
 
         <!-- BALISES OGG -->
         <?= runBalisesOgg($site_title,$site_content,$url_base, $trad["lang_code"]) ; ?>
-        <!--  -->
 
-        <!-- SITEMAP -->
-        <link rel="alternate" type="application/rss+xml" title="RSS | <?= $site_title;?>"
-            href="<?= $url_base;?>/seo/sitemap.xml">
-
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/style/peregrin.css">
 
-        <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <![endif]-->
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
     </head>
 
     <body class="peregrin" data-template="<?= $page;?>" data-lang="<?= $lang;?>"
