@@ -36,27 +36,42 @@ function peregrin_authBasic($username,$password) {
 
 
 function runBalisesOgg($site_title,$site_content,$url_online, $lang) {
-$result = '
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="'.$site_title.'">
-    
-<meta property="og:title" content="'.$site_title.'" />
-<meta property="og:description" content="'.$site_content.'" />
-<meta property="og:image" content="seo/share.png" />
-<meta property="og:url" content="'.$url_online.'" />
-<meta property="og:type" content="website">
-<meta property="og:locale" content="'.$lang.'" />
+  $result = '
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="'.$site_title.'">
+  
+  <meta property="og:title" content="'.$site_title.'" />
+  <meta property="og:description" content="'.$site_content.'" />
+  <meta property="og:image" content="seo/share.png" />
+  <meta property="og:url" content="'.$url_online.'" />
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="'.$lang.'" />
+  
+  <meta name="twitter:title" content="'.$site_title.'" />
+  <meta name="twitter:description" content="'.$site_content.'" />
+  <meta name="twitter:image" content="seo/share.png" />
+  <meta name="twitter:url" content="'.$url_online.'" />
+  
+  <meta property="og:title" content="'.$site_title.'" />
+  <meta property="og:description" content="'.$site_content.'" />
+  <meta property="og:image" content="seo/share.png" />
+  <meta property="og:url" content="'.$url_online.'" />
+  ';
+  return $result;
+}
 
-<meta name="twitter:title" content="'.$site_title.'" />
-<meta name="twitter:description" content="'.$site_content.'" />
-<meta name="twitter:image" content="seo/share.png" />
-<meta name="twitter:url" content="'.$url_online.'" />
-
-<meta property="og:title" content="'.$site_title.'" />
-<meta property="og:description" content="'.$site_content.'" />
-<meta property="og:image" content="seo/share.png" />
-<meta property="og:url" content="'.$url_online.'" />
-';
-return $result;
+/* run favicons on : https://realfavicongenerator.net/ */
+function runFavicons($site_title) {
+  $favicons = <<<HTML
+  <link rel="icon" type="image/x-icon" href="seo/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" href="seo/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="seo/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="seo/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="seo/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="{$site_title}" />
+  <link rel="manifest" href="seo/favicons/site.webmanifest" />
+  HTML;
+  
+  return $favicons;
 }
