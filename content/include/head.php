@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html
-    lang="<?= $trad["lang_code"];?> <?php if($trad["lang_code"]) : echo $trad["lang_code"]; else : echo 'fr'; endif; ?>"
+    lang="<?php if($trad["lang_code"]) : echo $trad["lang_code"]; else : echo 'fr-BE'; endif; ?>"
     dir="<?php if($trad["lang_direction"]) : echo $trad["lang_direction"]; else : echo 'ltr'; endif; ?>">
 
     <head>
@@ -10,7 +10,7 @@
         <title><?= $site_title;?></title>
         <meta name="description" content="<?= $trad['site_description'];?>">
         <meta name="robots" content="all">
-        <meta name="language" content="<?= $lang;?>">
+        <meta name="language" content="<?= $trad["lang_code"];?>">
         <meta name="author" content="<?= $site_author;?>">
 
         <!-- MAPPING  -->
@@ -22,7 +22,7 @@
         <?= runFavicons($site_title);?>
 
         <!-- BALISES OGG -->
-        <?= runBalisesOgg($site_title,$site_content,$url_base, $trad["lang_code"]) ; ?>
+        <?= runBalisesOgg($site_title,$trad['site_description'],$url_base, $trad["lang_code"]) ; ?>
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/style/peregrin.css">
