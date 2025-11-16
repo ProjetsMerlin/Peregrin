@@ -1,8 +1,6 @@
 <noscript>javascript is required</noscript>
 
-<script>
-    console.log('Touque !');
-</script>
+<script src="assets/js/main.js"></script>
 
 </body>
 

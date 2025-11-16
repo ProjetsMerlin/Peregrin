@@ -1,19 +1,43 @@
 <?php
 
-switch (true) {
-case ($get_page === $trad["url_home"] ) :
-$slug_page = "home";
-break;
+$routes["fr"] = array(
+    '' => 'home',
+    'accueil' => 'home',
+    'blog' => 'blog',
+    '404' => '404'
+);
 
-/* START */
-case ($get_page === $trad["url_blog"] ) :
-$slug_page = "blog";
-break;
+$routes["nl"] = array(
+    '' => 'home',
+    'welkom' => 'home',
+    'posts' => 'blog',
+    '404' => '404'
+);
 
-/* -END- */
+$priority['fr'] = array(
+    '' => '1',
+    'home' => '1',
+    'blog' => '5',
+    '404' => '10'
+);
 
-case ($get_page === "error" || $get_page === "404"):
-default:
-$slug_page= "404";
-break;
-}
+$priority["nl"] = array(
+    '' => '1',
+    'home' => '1',
+    'blog' => '5',
+    '404' => '10'
+);
+
+$lastmod['fr'] = array(
+    '' => '2025-11-16T22:38:15',
+    'home' => '2025-11-16T22:38:15',
+    'blog' => '2025-11-16T22:38:15',
+    '404' => '2025-11-16T22:38:15',
+);
+
+$lastmod["nl"] = array(
+    '' => '2025-11-16T22:38:15',
+    'home' => '2025-11-16T22:38:15',
+    'blog' => '2025-11-16T22:38:15',
+    '404' => '2025-11-16T22:38:15',
+);

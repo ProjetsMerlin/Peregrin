@@ -6,19 +6,23 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP_HOST} !=localhost
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
+# robots.txt & sitemap dynamiques
+RewriteRule ^robots\.txt$ ./data/seo/robots.php [L]
+RewriteRule ^sitemap\.xml$ ./data/seo/sitemap.php [L]
+
 #réécriture d'url
 RewriteCond %{REQUEST_FILENAME} !-d
 #home
 RewriteRule ^([a-z]+)/?$ ./index.php?lang=$1 [L]
-#page
+#pages
 RewriteRule ^([a-z]+)/([a-zA-Z0-9-_]+)$ ./index.php?lang=$1&page=$2 [L]
 #single post
 RewriteRule ^([a-z]+)/([a-zA-Z0-9-_]+)/([0-9]+)/([a-zA-Z0-9-_]+)$ ./index.php?lang=$1&page=$2&id=$3&slug=$4 [L]
 
 # autoriser des site à correspondre
-SetEnvIf Origin "http(s)?://(www\.)?(site1.be|site2.be|site3.be)$"AccessControlAllowOrigin=$0
-Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
-Header merge Vary Origin
+#SetEnvIf Origin "http(s)?://(www\.)?(site1.be|site2.be|site3.be)$"AccessControlAllowOrigin=$0
+#Header add Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+#Header merge Vary Origin
 
 # Désactiver l'affichage du contenu des répertoires
 Options All -Indexes
