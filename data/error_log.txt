@@ -1,0 +1,28 @@
+[2025-11-17 21:34:43] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 35
+[2025-11-17 21:34:43] Erreur : [2] Undefined variable $get_lang - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:43] Erreur : [2] Undefined array key "" - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:43] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:43] Erreur : [2] Trying to access array offset on null - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:43] Erreur : [2] include_once(content/pages/.php): Failed to open stream: No such file or directory - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:34:43] Erreur : [2] include_once(): Failed opening 'content/pages/.php' for inclusion (include_path='.;C:\php\pear') - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:34:46] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 35
+[2025-11-17 21:34:46] Erreur : [2] Undefined variable $get_lang - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:46] Erreur : [2] Undefined array key "" - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:46] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:46] Erreur : [2] Trying to access array offset on null - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 36
+[2025-11-17 21:34:46] Erreur : [2] include_once(content/pages/.php): Failed to open stream: No such file or directory - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:34:46] Erreur : [2] include_once(): Failed opening 'content/pages/.php' for inclusion (include_path='.;C:\php\pear') - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:37:36] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:37:36] Erreur : [2] Undefined variable $get_lang - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:36] Erreur : [2] Undefined array key "" - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:36] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:36] Erreur : [2] Trying to access array offset on null - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:36] Erreur : [2] include_once(content/pages/.php): Failed to open stream: No such file or directory - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 41
+[2025-11-17 21:37:36] Erreur : [2] include_once(): Failed opening 'content/pages/.php' for inclusion (include_path='.;C:\php\pear') - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 41
+[2025-11-17 21:37:57] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 38
+[2025-11-17 21:37:57] Erreur : [2] Undefined variable $get_lang - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:57] Erreur : [2] Undefined array key "" - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:57] Erreur : [2] Undefined variable $slug_page - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:57] Erreur : [2] Trying to access array offset on null - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 39
+[2025-11-17 21:37:57] Erreur : [2] include_once(content/pages/.php): Failed to open stream: No such file or directory - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 41
+[2025-11-17 21:37:57] Erreur : [2] include_once(): Failed opening 'content/pages/.php' for inclusion (include_path='.;C:\php\pear') - Fichier : C:\MAMP\htdocs\projets\peregrin\index.php - Ligne : 41

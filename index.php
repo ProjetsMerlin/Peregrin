@@ -10,7 +10,8 @@ $default_langage = $possible_langage[0];
 /* REDIRECTION */
 $template_page = "";
 if (!isset($_GET) || empty($_GET["lang"])) {
-    $site_url = $protocol . '://' . $domain . '/' . $default_langage;
+    $site_url = $protocol . '://' . $domain . '/' . $default_langage . "/";
+    header("Location: $site_url");
 } else if ($_GET["lang"] && empty($_GET["page"])) {
     if (in_array(htmlspecialchars($_GET["lang"]), $possible_langage) === true) {
         $get_lang = htmlspecialchars($_GET["lang"]);
@@ -27,7 +28,9 @@ if (!isset($_GET) || empty($_GET["lang"])) {
         include('data/lang/' . $get_lang . '.php');
         $slug_page = htmlspecialchars($_GET["page"]);
     } else {
-        $site_url = $protocol . '://' . $domain . '/' . $default_langage . '/404';
+        $get_lang = $default_langage;
+        include('data/lang/' . $get_lang . '.php');
+        $slug_page = "404";
     }
 }
 
