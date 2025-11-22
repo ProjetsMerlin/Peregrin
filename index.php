@@ -8,10 +8,10 @@ $url_base = $protocol . '://' . $domain . '/';
 $default_langage = $possible_langage[0];
 
 /* REDIRECTION */
-$template_page = "";
 if (!isset($_GET) || empty($_GET["lang"])) {
     $site_url = $protocol . '://' . $domain . '/' . $default_langage . "/";
     header("Location: $site_url");
+    exit;
 } else if ($_GET["lang"] && empty($_GET["page"])) {
     if (in_array(htmlspecialchars($_GET["lang"]), $possible_langage) === true) {
         $get_lang = htmlspecialchars($_GET["lang"]);
@@ -35,7 +35,7 @@ if (!isset($_GET) || empty($_GET["lang"])) {
 }
 
 include("data/rewriting.php");
-$uri = $slug_page;
-$slug_page = $routes[$get_lang][$slug_page];
+$uri = $slug_page ?? '';
+$slug_page = $routes[$get_lang ?? $default_langage][$slug_page];
 $template_page = "content/pages/" . $slug_page . ".php";
 include_once($template_page);
