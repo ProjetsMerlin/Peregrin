@@ -8,8 +8,8 @@ $possible_langage = array('fr', 'nl');
 $metadata["title"] = "Peregrin";
 $metadata["description"] = "Mon template PHP de base";
 $site_author = "lintermediaire.be";
-$domain_local = "lintermediaire.be/peregrin";
-$domain_production = "localhost/projets/peregrin";
+$domain_production = "lintermediaire.be/peregrin";
+$domain_local = "localhost/projets/peregrin";
 /* -|--|--|--|--|--|--|--|--|--|--|--|--|--|--|- */
 
 if ($_SERVER['SERVER_NAME'] !== "localhost") {
