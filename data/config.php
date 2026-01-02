@@ -12,10 +12,9 @@ $domain_production = "lintermediaire.be/peregrin";
 $domain_local = "localhost/projets/peregrin";
 /* -|--|--|--|--|--|--|--|--|--|--|--|--|--|--|- */
 
+$domain = $domain_local;
 if ($_SERVER['SERVER_NAME'] !== "localhost") {
-  $domain = 'lintermediaire.be/peregrin';
-} else {
-  $domain = "localhost/projets/peregrin";
+  $domain = $domain_production;
 }
 
 function runBalisesOgg($site_title, $site_content, $url_online, $lang)
