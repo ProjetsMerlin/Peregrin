@@ -36,6 +36,6 @@ if (!isset($_GET) || empty($_GET["lang"])) {
 
 include("data/rewriting.php");
 $uri = $slug_page ?? '';
-$slug_page = $routes[$get_lang ?? $default_langage][$slug_page];
+$slug_page = $routes[$get_lang ?? $default_langage][$slug_page] ?? '404';
 $template_page = "content/pages/" . $slug_page . ".php";
 include_once($template_page);
