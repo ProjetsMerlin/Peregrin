@@ -17,7 +17,7 @@
     <!-- MAPPING  -->
     <base href="<?= $url_base; ?>">
     <link rel="canonical" href="<?= $url_base; ?><?= $get_lang; ?>/<?= $slug_page ?? ""; ?>" />
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?= $url_base; ?>/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="<?= $url_base; ?>sitemap.xml">
 
     <!-- FAVICONS -->
     <?= runFavicons($metadata["title"]); ?>
